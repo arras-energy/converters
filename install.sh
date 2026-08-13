@@ -1,0 +1,17 @@
+#!/bin/bash
+# Syntax: install.sh
+
+# verify the gridlabd environment
+if [ "${GLD_VER:-none}" == "none" ]; then
+	echo "ERROR [$0]: you must run this command in a gridlabd environment" >/dev/stderr
+	exit 1
+fi
+
+# install to python site-packages
+python3 -m pip install --force-reinstall git+https://github.com/arras-energy/converters
+
+# link converters into gridlabd etc
+CONVERTERS=$GLD_VER/lib/python$PYTHON_VER/site-packages/converters
+for FILE in $CONVERTERS/*.py; do
+	ln -sf $FILE $GLD_ETC
+done
