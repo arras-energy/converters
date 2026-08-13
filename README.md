@@ -1,4 +1,4 @@
-# HiPAS Converters
+# Arras Energy Converters
 
 Current the following converters are available
 
