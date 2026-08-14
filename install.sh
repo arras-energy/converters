@@ -10,6 +10,9 @@ fi
 # install to python site-packages
 python3 -m pip install --force-reinstall git+https://github.com/arras-energy/converters
 
+# compile the package
+python3 -m converters.__init__
+
 # link converters into gridlabd etc
 CONVERTERS=$GLD_VER/lib/python$PYTHON_VER/site-packages/converters
 for FILE in $CONVERTERS/*.py; do
