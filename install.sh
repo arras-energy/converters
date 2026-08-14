@@ -14,7 +14,6 @@ python3 -m pip install --force-reinstall git+https://github.com/arras-energy/con
 python3 -m converters.__init__
 
 # link converters into gridlabd etc
-CONVERTERS=$GLD_VER/lib/python$PYTHON_VER/site-packages/converters
-for FILE in $CONVERTERS/*.py; do
+for FILE in $PYTHON_LIB/$PACKAGE/*.py; do
 	ln -sf $FILE $GLD_ETC
 done
