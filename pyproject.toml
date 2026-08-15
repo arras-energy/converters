@@ -8,11 +8,6 @@ where = ["src"]
 [tool.setuptools.dynamic]
 dependencies = {file=["requirements.txt"]}
 
-[tool.setuptools]
-packages = [
-    "converters"
-]
-
 [project]
 name = "converters"
 version = "26.0.0"
