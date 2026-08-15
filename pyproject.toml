@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 dependencies = {file=["requirements.txt"]}
 
 [tool.setuptools.packages.find]
-where = ["src/converters"]
+where = ["src"]
 
 [project]
 name = "converters"
