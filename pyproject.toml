@@ -2,6 +2,14 @@
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools]
+packages = [
+    "converters"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.setuptools.package-data]
 converters = ["*.py"]
 
@@ -10,7 +18,7 @@ dependencies = {file=["requirements.txt"]}
 
 [project]
 name = "converters"
-version = "0.0.0"
+version = "26.0.0"
 description = "Arras Energy converters for GridLAB-D"
 authors = [
     {name = "David P. Chassin <dchassin@eudoxys.com>"},
@@ -19,6 +27,7 @@ maintainers = [
     {name = "David P. Chassin <dchassin@eudoxys.com>"},
     ]
 readme = "README.md"
+requires-python = "== 3.10.*"
 keywords = ["github","python","arras","converters","gridlabd"]
 license = {text="MIT License"}
 classifiers = [
