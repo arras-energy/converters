@@ -21,7 +21,7 @@ maintainers = [
 readme = "README.md"
 requires-python = "== 3.10.*"
 keywords = ["github","python","arras","converters","gridlabd"]
-license-file = ["LICENSE"]
+license = { file = "LICENSE" }
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
