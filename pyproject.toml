@@ -10,9 +10,6 @@ packages = [
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.setuptools.package-data]
-converters = ["*.py"]
-
 [tool.setuptools.dynamic]
 dependencies = {file=["requirements.txt"]}
 
