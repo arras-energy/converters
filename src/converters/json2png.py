@@ -98,7 +98,7 @@ elif output_type == 'summary':
 	draw = ImageDraw.Draw(img)
 
 	def node(draw,x,y,text,vmargin=1,hmargin=1,fnt=ImageFont.load_default()):
-		sz = draw.multiline_textbox((x,y),text,font=fnt)
+		sz = draw.multiline_textbbox((x,y),text,font=fnt)
 		draw.rectangle([x-sz[0]/2-hmargin,y-sz[1]/2-vmargin,x+sz[0]/2+hmargin,y+sz[1]/2+vmargin],outline="black",fill="white")
 		draw.multiline_text((x-sz[0]/2,y-sz[1]/2),text,font=fnt,fill="black")
 
