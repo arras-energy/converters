@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# gridlabd files
+validate.txt
+autotest/test_*/
