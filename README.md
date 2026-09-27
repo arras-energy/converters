@@ -1,6 +1,6 @@
 # Arras Energy Converters
 
-Current the following converters are available
+The following converters are available for Arras Energy.
 
 | From format | To format | Input type | Output Type | Description   
 | ----------- | --------- | ---------- | ----------- | -----------
@@ -26,4 +26,17 @@ Current the following converters are available
 | `txt`       | `glm`     | `cyme`     |           | CYME TXT file to GridLAB-D model
 | |
 | `zip`       | `glm`     |            |           | ZIP archive to GridLAB-D model
-| |
+
+## Installation
+
+To install the converters, run the `apm` command, e.g.,
+
+    gridlabd apm install converters
+
+## Validation
+
+To validate the converters run the command
+
+    gridlabd --validate
+    
+in the converters repository root folder
